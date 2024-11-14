@@ -11,26 +11,23 @@ import "../styles/style.css";
     <title>Astro</title>
   </head>
   <body>
-<<<<<<< HEAD
-    <header></header>
-    <section></section>
-    <footer></footer>
-=======
-    <div class="progress-container">
-      <div class="progress-bar" id="myBar"></div>
+    <div class="scroll_container">
+      <div class="scroll_indicator"></div>
     </div>
     <h1>Astro</h1>
->>>>>>> origin/Lasse---JS
-  </body>
+
+
+
+</body>
+    <script>
+      window.addEventListener("scroll", onScroll);
+
+      function onScroll() {
+        const scrolled = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolledfactor = (scrolled / height) * 100;
+        document.querySelector(".scroll_indicator").style.width = `${scrolledfactor}%`;
+      }
+    </script>
+  
 </html>
-
-<script>
-  window.addEventListener("scroll", onScroll);
-
-  function onScroll() {
-    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    let height = document.documentElement.scrollHeight - document.documentElement;
-    let scrolled = (winScroll / height) * 100;
-    document.getElementById("myBar").style.width = scrolled + "%";
-  }
-</script>
