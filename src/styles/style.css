@@ -9,6 +9,36 @@
 .scroll_indicator {
   width: 0%;
   height: 100%;
-  background-color: #DB5B52;
+  background-color: #db5b52;
   opacity: 40%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  --rød: #db5b52;
+  --blå: #6da0ff;
+  --gul: #f2dd72;
+}
+
+h1 {
+  font-family: ;
+}
+h2 {
+}
+h3 {
+}
+h4 {
+  font-family: "Work Sans";
+}
+h5 {
+  font-family: "Work Sans";
+  font-size: 24px;
+  color: ;
+}
+p {
+  font-family: "Work Sans";
+  font-size: 16px;
 }
