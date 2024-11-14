@@ -23,22 +23,31 @@ html {
   --gul: #f2dd72;
 }
 
-h1 {
-  font-family: ;
-}
-h2 {
-}
+h1,
+h2,
 h3 {
+  text-align: center;
 }
 h4 {
   font-family: "Work Sans";
+  text-align: center;
 }
 h5 {
   font-family: "Work Sans";
   font-size: 24px;
-  color: ;
+  color: var(--rød);
+  text-align: center;
 }
 p {
   font-family: "Work Sans";
   font-size: 16px;
+  text-align: center;
+}
+a {
+  font-family: "Work Sans";
+}
+
+section {
+  max-width: 60%;
+  margin: auto;
 }
