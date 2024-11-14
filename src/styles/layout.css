@@ -1,0 +1,18 @@
+.info1,
+.info2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.center {
+  grid-column: 2 / 3;
+}
+
+.kunstnere {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.card {
+  text-align: left;
+  width: 30%;
+  justify-self: center;
+}
