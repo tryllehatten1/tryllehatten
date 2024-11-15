@@ -1,5 +1,6 @@
 .info1,
-.info2 {
+.info2,
+.info3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -15,4 +16,38 @@
   text-align: left;
   width: 30%;
   justify-self: center;
+}
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.info3 {
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.middle {
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+}
+.left {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  width: 158.716px;
+  height: 164.026px;
+  transform: rotate(-19.202deg);
+  flex-shrink: 0;
+}
+.right {
+  grid-column: 3 / 4;
+  width: 182.28px;
+  height: 148.929px;
+  transform: rotate(14.526deg);
+  flex-shrink: 0;
+}
+
+.blue {
+  background-image: url(/public/img/tekstfigurblaa.webp);
+  background-size: cover;
+  background-position: 1rem -1rem;
+  background-repeat: no-repeat;
+  padding: 7rem;
 }
