@@ -12,14 +12,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.card {
-  text-align: left;
-  width: 30%;
-  justify-self: center;
-}
+
 .icons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: inline-flex;
+  gap: 10px;
+}
+.icons img {
+  width: 40px;
 }
 .info3 {
   grid-template-rows: 1fr 1fr 1fr;
@@ -46,8 +45,24 @@
 
 .blue {
   background-image: url(/public/img/tekstfigurblaa.webp);
-  background-size: cover;
-  background-position: 1rem -1rem;
+  background-size: 110%;
+  background-position: 35%;
   background-repeat: no-repeat;
-  padding: 7rem;
+}
+
+.gul {
+  background-image: url(/public/img/tekstfigurgul.webp);
+  background-size: 100%;
+  background-position: 30%;
+  background-repeat: no-repeat;
+}
+.blue p,
+.gul p {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

@@ -40,10 +40,12 @@ h1 {
 
 h2 {
   font-size: 100px;
+  padding: 3rem 0rem;
 }
 
 h3 {
   font-size: 96px;
+  padding: 2rem 0rem;
 }
 h4 {
   font-family: "Work Sans";
@@ -64,9 +66,10 @@ p {
   font-family: "Work Sans";
   font-size: 16px;
   text-align: center;
-  max-width: 65ch;
+  max-width: 55ch;
   margin: auto;
-  padding-top: 8rem;
+  font-weight: 500;
+  line-height: 200%;
 }
 a {
   font-family: "Work Sans";
@@ -78,7 +81,7 @@ section {
 }
 
 img {
-  width: 150px;
+  width: 100px;
   height: auto;
   display: block;
   margin: auto;

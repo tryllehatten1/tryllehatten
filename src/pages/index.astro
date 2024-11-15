@@ -2,6 +2,44 @@
 import "../styles/style.css";
 import "../styles/layout.css";
 import Button from "../components/Button.astro";
+import Card from "../components/Card.astro";
+const cards = [
+  {
+    imgSrc: "/public/img/tryllemichael.webp",
+    title: "TRYLLE MICHAEL",
+    description: "Michael tryller på Riget. Han er en ægte fortryllende magiker, der både får børn og voksne til at forbløffes.",
+  },
+  {
+    imgSrc: "/public/img/LasseNK.webp",
+    title: "LASSE NK",
+    description: "Lasse spreder tryllestøv på Herlev, Hvidovre og Gram Slot. Han er mester til ballonkunst og har en populær segway. ",
+  },
+  {
+    imgSrc: "/public/img/hennysolskin.webp",
+    title: "HENNY SOLSKIN",
+    description: "Henny Solskin er en ægte solstråle. Med hendes mange farver, dyr og bamser spreder hun glæde og smil på Herning hospital.",
+  },
+  {
+    imgSrc: "/public/img/birger.webp",
+    title: "BIRGER",
+    description: "Birger tryller for KidsAid i Viborg og Odense. Han har optrådt for både store og små i over 20 år, og er derfor en meget erfaren magiker!",
+  },
+  {
+    imgSrc: "/public/img/helle.webp",
+    title: "HELLE",
+    description: "Helle er en vaskeægte Danmarksmester i børnetryl.",
+  },
+  {
+    imgSrc: "/public/img/rasmusfupogfidus.webp",
+    title: "RASMUS FUP & FIDUS",
+    description: "Rasmus Fup & Fidus fra AUH tryller på forskellige børneafdelinger på Aarhus og Familiehuset.",
+  },
+  {
+    imgSrc: "/public/img/fabelagtigefalbe.webp",
+    title: "FABELAGTIGE FALBE",
+    description: "En altmulig-troldmand, som kan få hvert barn til at grine.",
+  },
+];
 ---
 
 <html lang="en">
@@ -27,7 +65,9 @@ import Button from "../components/Button.astro";
       <h1>TRYLLEHATTEN</h1>
       <h4>Magien der skaber et smil</h4>
       <img src="/public/img/silke.svg" alt="" />
-      <p class="blue">Tryllehatten er vores samling af spasmagere, tryllekunstnere og filihankatte, som hver dag tager ud og spreder magien på landets hospitaler. De er alle fabelagtige magikere, som har spidskompetence i at trylle et smil frem på læberne hos syge børn og deres familier. Med deres fortryllende tricks, varme hjerter og evnen til at skabe en særlig forbindelse bringer de et kærkomment lys i en ofte svær tid. Tryllehatten skaber magiske øjeblikke fyldt med grin, forundring og håb – små pauser fra hverdagens udfordringer, hvor glæden får lov at fylde rummet.</p>
+      <div class="blue">
+        <p>Tryllehatten er vores samling af spasmagere, tryllekunstnere og filihankatte, som hver dag tager ud og spreder magien på landets hospitaler. De er alle fabelagtige magikere, som har spidskompetence i at trylle et smil frem på læberne hos syge børn og deres familier. Med deres fortryllende tricks, varme hjerter og evnen til at skabe en særlig forbindelse bringer de et kærkomment lys i en ofte svær tid. Tryllehatten skaber magiske øjeblikke fyldt med grin, forundring og håb – små pauser fra hverdagens udfordringer, hvor glæden får lov at fylde rummet.</p>
+      </div>
       <div class="info1">
         <img src="/public/img/ballongroen.svg" alt="" />
         <div>
@@ -45,43 +85,10 @@ import Button from "../components/Button.astro";
         <img src="/public/img/Ballonpink.svg" alt="" />
       </div>
       <h2>MØD TRYLLEKUNSTNERNE</h2>
-      <div class="kunstnere">
-        <div class="card">
-          <img src="" alt="" />
-          <h5>TRYLLE MICHEAL</h5>
-          <p>Michael tryller på Riget. Han er en ægte fortryllende magiker, der både får børn og voksne til at forbløffes.</p>
-        </div>
-        <div class="card">
-          <img src="" alt="" />
-          <h5>LASSE NK</h5>
-          <p>Lasse spreder tryllestøv på Herlev, Hvidovre og Gram Slot. Han er mester til ballonkunst og har en populær segway.</p>
-        </div>
-        <div class="card">
-          <img src="" alt="" />
-          <h5>HENNY SOLSKIN</h5>
-          <p>Henny Solskin er en ægte solstråle. Med hendes mange farver, dyr og bamser spreder hun glæde og smil på Herning hospital.</p>
-        </div>
-        <div class="card">
-          <img src="" alt="" />
-          <h5>BIRGER</h5>
-          <p>Birger tryller for KidsAid i Viborg og Odense. Han har optrådt for både store og små i over 20 år, og er derfor en meget erfaren magiker!</p>
-        </div>
-        <div class="card">
-          <img src="" alt="" />
-          <h5>HELLE</h5>
-          <p>Helle er en vaskeægte Danmarksmester i børnetryl.</p>
-        </div>
-        <div class="card">
-          <img src="" alt="" />
-          <h5>RASMUS FUP & FIDUS</h5>
-          <p>Rasmus Fup & Fidus fra AUH tryller på forskellige børneafdelinger på Aarhus og Familiehuset.</p>
-        </div>
-        <div class="card">
-          <img src="" alt="" />
-          <h5>FABELAGTIGE FALBE</h5>
-          <p>En altmulig-troldmand, som kan få hvert barn til at grine.</p>
-        </div>
+      <div class="card-container">
+        {cards.map((card) => <Card imgSrc={card.imgSrc} title={card.title} description={card.description} />)}
       </div>
+
       <div class="info3">
         <img class="left" src="/public/img/Kort.svg" alt="" />
         <div class="middle">
@@ -92,13 +99,16 @@ import Button from "../components/Button.astro";
         </div>
         <img class="right" src="/public/img/Spillekort.svg" alt="" />
       </div>
-      <p>Tryllehatten stræber efter ikke bare at være en samling af talentfulde kunstnere, men et koncept som også har plads til de skønne børn, som det hele handler om. De kan nemlig også få lov til at “få hatten på”, da mange af vores kunstnere deler ud af deres tricks, så børnene kan dele dem med deres familie og venner, når de kommer på besøg. På denne måde går vi efter at magien forbliver med børnene, selv når dagen er omme og tryllekunstnerne må drage hjemad.</p>
+      <div class="gul">
+        <p>Tryllehatten stræber efter ikke bare at være en samling af talentfulde kunstnere, men et koncept som også har plads til de skønne børn, som det hele handler om. De kan nemlig også få lov til at “få hatten på”, da mange af vores kunstnere deler ud af deres tricks, så børnene kan dele dem med deres familie og venner, når de kommer på besøg. På denne måde går vi efter at magien forbliver med børnene, selv når dagen er omme og tryllekunstnerne må drage hjemad.</p>
+      </div>
       <h4>“Det var mega sjovt at se Trylle Michael i dag. Han lærte mig at lave et korttrick hvor man får kortet til at forsvinde. Det gør mig glad når de kommer forbi og tryller for os.”</h4>
       <p>- Malthe, 7 år</p>
       <h2>BESØG VORES SOCIALE MEDIER</h2>
       <div class="icons">
-        <img src="/public/img/instragramlogo.webp" alt="" />
-        <img src="/public/img/linkedinlogo.svg" alt="" />
+        <img src="/public/img/instagramlogo.png
+		" alt="" />
+        <img src="/public/img/linkedinlogo.png" alt="" />
         <img src="/public/img/facebooklogo.webp" alt="" />
       </div>
       <img src="/public/img/Instagram.webp" alt="" />
