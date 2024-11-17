@@ -1,0 +1,94 @@
+---
+import "../styles/style.css";
+
+const { variant } = Astro.props;
+const { link } = Astro.props;
+---
+
+<!-- <video src="/public/video/KidsAid.mov" autoplay></video>
+
+<style>
+  video {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+  }
+
+  @media (max-width: 520px) {
+    video {
+      width: 190%;
+      height: auto; /* Gør højden automatisk i forhold til bredden */
+      object-fit: contain; /* Sørger for at hele videoen vises uden at blive beskåret */
+    }
+  }
+</style> -->
+<video id="background-video" src="/public/video/KidsAid.mov"></video>
+
+<!-- Custom kontrolpanel -->
+<div id="video-controls">
+  <button id="play-pause-btn">Pause</button>
+</div>
+
+<style>
+  /* Standard video stil */
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Videoen er baggrund */
+  }
+
+  /* Når skærmbredden er 520px eller mindre */
+  @media (max-width: 520px) {
+    video {
+      width: 190%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  /* Custom kontrolpanel, der er synligt foran videoen */
+  #video-controls {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Sørger for, at kontrolpanelet er ovenpå videoen */
+  }
+
+  #play-pause-btn {
+    display: flex;
+    width: fit-content;
+    height: 53px;
+    padding: 2.465px 30px 4.602px 30px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: #db5b52;
+    color: white;
+    margin: 4rem 1rem;
+    cursor: pointer;
+    border-style: none;
+  }
+</style>
+
+<script>
+  // Hent video- og knap-elementerne
+  const video = document.getElementById("background-video");
+  const playPauseBtn = document.getElementById("play-pause-btn");
+
+  // Tilføj eventlistener til knappen for at starte og pause videoen
+  playPauseBtn.addEventListener("click", function () {
+    if (video.paused) {
+      video.play();
+      playPauseBtn.textContent = "Pause"; // Skift knaptekst til 'Pause'
+    } else {
+      video.pause();
+      playPauseBtn.textContent = "Play"; // Skift knaptekst til 'Play'
+    }
+  });
+</script>

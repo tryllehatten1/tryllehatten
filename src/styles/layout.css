@@ -81,6 +81,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 50%; /* DET ER TIL VIDEOEN I DESKTOP VERSION / SKAL ÆNDRES VED MOBIL VERSION*/
 }
 nav img {
   margin: 3rem;
