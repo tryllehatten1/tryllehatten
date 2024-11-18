@@ -95,9 +95,10 @@ nav a {
   top: 0%;
   right: 0%;
 }
+/** image HAT **/
 .sticky-image-container {
   position: fixed;
-  bottom: -95%;
+  bottom: -220%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
@@ -108,21 +109,7 @@ nav a {
   width: 1400px;
   height: auto;
 }
-
-.back-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
+.sticky-image2 {
+  width: 1400px;
   height: auto;
-}
-
-.sticky-image-container.full-size {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  transform: none;
-  width: 100%;
-  z-index: 1;
 }
