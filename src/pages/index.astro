@@ -7,37 +7,37 @@ import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
 const cards = [
   {
-    imgSrc: "/public/img/tryllemichael.webp",
+    imgSrc: "/img/tryllemichael.webp",
     title: "TRYLLE MICHAEL",
     description: "Michael tryller på Riget. Han er en ægte fortryllende magiker, der både får børn og voksne til at forbløffes.",
   },
   {
-    imgSrc: "/public/img/LasseNK.webp",
+    imgSrc: "/img/LasseNK.webp",
     title: "LASSE NK",
     description: "Lasse spreder tryllestøv på Herlev, Hvidovre og Gram Slot. Han er mester til ballonkunst og har en populær segway. ",
   },
   {
-    imgSrc: "/public/img/hennysolskin.webp",
+    imgSrc: "/img/hennysolskin.webp",
     title: "HENNY SOLSKIN",
     description: "Henny Solskin er en ægte solstråle. Med hendes mange farver, dyr og bamser spreder hun glæde og smil på Herning hospital.",
   },
   {
-    imgSrc: "/public/img/birger.webp",
+    imgSrc: "/img/birger.webp",
     title: "BIRGER",
     description: "Birger tryller for KidsAid i Viborg og Odense. Han har optrådt for både store og små i over 20 år, og er derfor en meget erfaren magiker!",
   },
   {
-    imgSrc: "/public/img/helle.webp",
+    imgSrc: "/img/helle.webp",
     title: "HELLE",
     description: "Helle er en vaskeægte Danmarksmester i børnetryl.",
   },
   {
-    imgSrc: "/public/img/rasmusfupogfidus.webp",
+    imgSrc: "/img/rasmusfupogfidus.webp",
     title: "RASMUS FUP & FIDUS",
     description: "Rasmus Fup & Fidus fra AUH tryller på forskellige børneafdelinger på Aarhus og Familiehuset.",
   },
   {
-    imgSrc: "/public/img/fabelagtigefalbe.webp",
+    imgSrc: "/img/fabelagtigefalbe.webp",
     title: "FABELAGTIGE FALBE",
     description: "En altmulig-troldmand, som kan få hvert barn til at grine.",
   },
@@ -61,77 +61,106 @@ const cards = [
     </div>
     <header>
       <nav>
-        <img src="/public/img/Logo.svg" alt="" />
+        <img src="/img/Logo.svg" alt="" />
         <Button> DONER </Button>
         <Video />
       </nav>
     </header>
     <main>
-      <!-- <Youtube /> -->
-      <h1>TRYLLEHATTEN</h1>
-      <h4>Magien der skaber et smil</h4>
-      <img src="/public/img/silke.svg" alt="" />
-      <div class="blue">
-        <p>Tryllehatten er vores samling af spasmagere, tryllekunstnere og filihankatte, som hver dag tager ud og spreder magien på landets hospitaler. De er alle fabelagtige magikere, som har spidskompetence i at trylle et smil frem på læberne hos syge børn og deres familier. Med deres fortryllende tricks, varme hjerter og evnen til at skabe en særlig forbindelse bringer de et kærkomment lys i en ofte svær tid. Tryllehatten skaber magiske øjeblikke fyldt med grin, forundring og håb – små pauser fra hverdagens udfordringer, hvor glæden får lov at fylde rummet.</p>
-      </div>
-      <div class="info1">
-        <img src="/public/img/ballongroen.svg" alt="" />
-        <div>
-          <p>OVER</p>
-          <h3>90.000</h3>
-          <p>BØRN HAR FÅET TRYLLEHATTEN PÅ</p>
-          <Button>FÅ TALLET TIL AT STIGE</Button>
+      <section class="standard_scroll_section">
+        <h1>TRYLLEHATTEN</h1>
+        <h4>Magien der skaber et smil</h4>
+      </section>
+      <section class="standard_scroll_section">
+        <img src="/img/silke.svg" alt="" />
+      </section>
+      <section class="standard_scroll_section">
+        <div class="blue">
+          <p>Tryllehatten er vores samling af spasmagere, tryllekunstnere og filihankatte, som hver dag tager ud og spreder magien på landets hospitaler. De er alle fabelagtige magikere, som har spidskompetence i at trylle et smil frem på læberne hos syge børn og deres familier. Med deres fortryllende tricks, varme hjerter og evnen til at skabe en særlig forbindelse bringer de et kærkomment lys i en ofte svær tid. Tryllehatten skaber magiske øjeblikke fyldt med grin, forundring og håb – små pauser fra hverdagens udfordringer, hvor glæden får lov at fylde rummet.</p>
         </div>
-      </div>
-      <div class="info2">
-        <div class="center">
-          <h3>100%</h3>
-          <p>AF DONATIONER GÅR TIL AT SKABE MAGISKE ØJEBLIKKE FOR BØRNENE</p>
+      </section>
+      <section class="standard_scroll_section">
+        <div class="info1">
+          <img src="/img/ballongroen.svg" alt="" />
+          <div>
+            <p>OVER</p>
+            <h3>90.000</h3>
+            <p>BØRN HAR FÅET TRYLLEHATTEN PÅ</p>
+            <Button>FÅ TALLET TIL AT STIGE</Button>
+          </div>
         </div>
-        <img src="/public/img/Ballonpink.svg" alt="" />
-      </div>
-      <h2>MØD TRYLLEKUNSTNERNE</h2>
-      <div class="card-container">
-        {cards.map((card) => <Card imgSrc={card.imgSrc} title={card.title} description={card.description} />)}
-      </div>
-
-      <div class="info3">
-        <img class="left" src="/public/img/Kort.svg" alt="" />
-        <div class="middle">
-          <p>BLIV EN DEL AF DE</p>
-          <h3>3245</h3>
-          <p>VIRKSOMHEDER, PERSONER OG FAMILIER, SOM ALLEREDE STØTTER TRYLLEHATTENS MAGI</p>
-          <Button>STØT</Button>
+      </section>
+      <section class="standard_scroll_section">
+        <div class="info2">
+          <div class="center">
+            <h3>100%</h3>
+            <p>AF DONATIONER GÅR TIL AT SKABE MAGISKE ØJEBLIKKE FOR BØRNENE</p>
+          </div>
+          <img src="/img/Ballonpink.svg" alt="" />
         </div>
-        <img class="right" src="/public/img/Spillekort.svg" alt="" />
-      </div>
-      <div class="gul">
-        <p>Tryllehatten stræber efter ikke bare at være en samling af talentfulde kunstnere, men et koncept som også har plads til de skønne børn, som det hele handler om. De kan nemlig også få lov til at “få hatten på”, da mange af vores kunstnere deler ud af deres tricks, så børnene kan dele dem med deres familie og venner, når de kommer på besøg. På denne måde går vi efter at magien forbliver med børnene, selv når dagen er omme og tryllekunstnerne må drage hjemad.</p>
-      </div>
-      <h4>“Det var mega sjovt at se Trylle Michael i dag. Han lærte mig at lave et korttrick hvor man får kortet til at forsvinde. Det gør mig glad når de kommer forbi og tryller for os.”</h4>
-      <p>- Malthe, 7 år</p>
-      <h3>BESØG VORES SOCIALE MEDIER</h3>
-      <div class="icons">
-        <img src="/public/img/instagramlogo.png
+      </section>
+      <section class="standard_scroll_section">
+        <h2>MØD TRYLLEKUNSTNERNE</h2>
+        <div class="card-container">
+          {cards.map((card) => <Card imgSrc={card.imgSrc} title={card.title} description={card.description} />)}
+        </div>
+      </section>
+      <section class="standard_scroll_section">
+        <div class="info3">
+          <img class="left" src="/img/Kort.svg" alt="" />
+          <div class="middle">
+            <p>BLIV EN DEL AF DE</p>
+            <h3>3245</h3>
+            <p>VIRKSOMHEDER, PERSONER OG FAMILIER, SOM ALLEREDE STØTTER TRYLLEHATTENS MAGI</p>
+            <Button>STØT</Button>
+          </div>
+          <img class="right" src="/img/Spillekort.svg" alt="" />
+        </div>
+      </section>
+      <section class="standard_scroll_section">
+        <div class="gul">
+          <p>Tryllehatten stræber efter ikke bare at være en samling af talentfulde kunstnere, men et koncept som også har plads til de skønne børn, som det hele handler om. De kan nemlig også få lov til at “få hatten på”, da mange af vores kunstnere deler ud af deres tricks, så børnene kan dele dem med deres familie og venner, når de kommer på besøg. På denne måde går vi efter at magien forbliver med børnene, selv når dagen er omme og tryllekunstnerne må drage hjemad.</p>
+        </div>
+        <h4>“Det var mega sjovt at se Trylle Michael i dag. Han lærte mig at lave et korttrick hvor man får kortet til at forsvinde. Det gør mig glad når de kommer forbi og tryller for os.”</h4>
+        <p>- Malthe, 7 år</p>
+      </section>
+      <section class="standard_scroll_section">
+        <h3>BESØG VORES SOCIALE MEDIER</h3>
+        <div class="icons">
+          <img src="/img/instagramlogo.png
 		" alt="" />
-        <img src="/public/img/linkedinlogo.png" alt="" />
-        <img src="/public/img/facebooklogo.webp" alt="" />
-      </div>
-      <img class="instagram" src="/public/img/Instagram.webp" alt="" />
-
-      <div id="hat"></div>
+          <img src="/img/linkedinlogo.png" alt="" />
+          <img src="/img/facebooklogo.webp" alt="" />
+        </div>
+        <img class="instagram" src="/img/Instagram.webp" alt="" />
+      </section>
+      <section class="standard_scroll_section">
+        <div id="hat"></div>
+      </section>
+      <footer></footer>
     </main>
-    <footer></footer>
   </body>
-
-  <script>
-    window.addEventListener("scroll", onScroll);
-
-    function onScroll() {
-      const scrolled = document.body.scrollTop || document.documentElement.scrollTop;
-      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const scrolledfactor = (scrolled / height) * 100;
-      document.querySelector(".scroll_indicator").style.width = `${scrolledfactor}%`;
-    }
-  </script>
 </html>
+
+<script>
+  window.addEventListener("scroll", onScroll);
+
+  function onScroll() {
+    const scrolled = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolledfactor = (scrolled / height) * 100;
+    document.querySelector(".scroll_indicator").style.width = `${scrolledfactor}%`;
+  }
+
+  import { animate, scroll } from "motion";
+  animate("body", { opacity: [0, 1] }, { duration: 1 });
+
+  const allStandardScrollSection = document.querySelectorAll(".standard_scroll_section");
+
+  allStandardScrollSection.forEach((eachSection) => {
+    scroll(animate(eachSection, { scale: [0, 1, 1, 0] }, { ease: "linear" }), {
+      target: eachSection,
+      offset: ["start end", "end end", "start start", "end start"],
+    });
+  });
+</script>

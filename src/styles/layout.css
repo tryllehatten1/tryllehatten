@@ -27,6 +27,7 @@
   grid-column: 2 / 3;
   grid-row: 1 / 4;
 }
+
 .left {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
@@ -44,14 +45,14 @@
 }
 
 .blue {
-  background-image: url(/public/img/tekstfigurblaa.webp);
+  background-image: url(/img/tekstfigurblaa.webp);
   background-size: 110%;
   background-position: 35%;
   background-repeat: no-repeat;
 }
 
 .gul {
-  background-image: url(/public/img/tekstfigurgul.webp);
+  background-image: url(/img/tekstfigurgul.webp);
   background-size: 100%;
   background-position: 30%;
   background-repeat: no-repeat;
@@ -72,7 +73,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(/public/img/Hat.svg);
+  background-image: url(/img/Hat.svg);
   background-size: cover;
   pointer-events: none;
   display: none;
