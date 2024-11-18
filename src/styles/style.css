@@ -1,3 +1,16 @@
+#myElement {
+  position: absolute;
+  cursor: url('/img/Tryllestav.svg'), auto;
+  width: 100px;
+    height: 100px;
+}
+
+#myElement:active {
+  cursor: url('/img/Tryllestavvedklik.svg'), auto;
+}
+  
+
+
 .scroll_container {
   position: sticky;
   top: 0;
