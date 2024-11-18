@@ -1,10 +1,9 @@
 ---
-import Video from "../components/Video.astro";
-import Youtube from "../components/Youtube.astro";
 import "../styles/style.css";
 import "../styles/layout.css";
 import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
+import Iframe from "../components/Iframe.astro";
 ---
 
 <html lang="en">
@@ -27,7 +26,6 @@ import Card from "../components/Card.astro";
         <nav>
           <img src="/img/Logo.svg" alt="" />
           <Button> DONER </Button>
-          <Video />
         </nav>
       </header>
       <main>
@@ -130,6 +128,10 @@ import Card from "../components/Card.astro";
             </div>
             <img class="right" src="/img/Spillekort.svg" alt="" />
           </div>
+        </section>
+        <section class="standard_scroll_section">
+          <h2>Alle har ret til den magi</h2>
+          <Iframe />
         </section>
         <section class="standard_scroll_section">
           <div class="gul">
