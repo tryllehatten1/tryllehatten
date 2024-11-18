@@ -5,43 +5,6 @@ import "../styles/style.css";
 import "../styles/layout.css";
 import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
-const cards = [
-  {
-    imgSrc: "/img/tryllemichael.webp",
-    title: "TRYLLE MICHAEL",
-    description: "Michael tryller på Riget. Han er en ægte fortryllende magiker, der både får børn og voksne til at forbløffes.",
-  },
-  {
-    imgSrc: "/img/LasseNK.webp",
-    title: "LASSE NK",
-    description: "Lasse spreder tryllestøv på Herlev, Hvidovre og Gram Slot. Han er mester til ballonkunst og har en populær segway. ",
-  },
-  {
-    imgSrc: "/img/hennysolskin.webp",
-    title: "HENNY SOLSKIN",
-    description: "Henny Solskin er en ægte solstråle. Med hendes mange farver, dyr og bamser spreder hun glæde og smil på Herning hospital.",
-  },
-  {
-    imgSrc: "/img/birger.webp",
-    title: "BIRGER",
-    description: "Birger tryller for KidsAid i Viborg og Odense. Han har optrådt for både store og små i over 20 år, og er derfor en meget erfaren magiker!",
-  },
-  {
-    imgSrc: "/img/helle.webp",
-    title: "HELLE",
-    description: "Helle er en vaskeægte Danmarksmester i børnetryl.",
-  },
-  {
-    imgSrc: "/img/rasmusfupogfidus.webp",
-    title: "RASMUS FUP & FIDUS",
-    description: "Rasmus Fup & Fidus fra AUH tryller på forskellige børneafdelinger på Aarhus og Familiehuset.",
-  },
-  {
-    imgSrc: "/img/fabelagtigefalbe.webp",
-    title: "FABELAGTIGE FALBE",
-    description: "En altmulig-troldmand, som kan få hvert barn til at grine.",
-  },
-];
 ---
 
 <html lang="en">
@@ -76,7 +39,7 @@ const cards = [
       </section>
       <section class="standard_scroll_section">
         <div class="blue">
-          <p>Tryllehatten er vores samling af spasmagere, tryllekunstnere og filihankatte, som hver dag tager ud og spreder magien på landets hospitaler. De er alle fabelagtige magikere, som har spidskompetence i at trylle et smil frem på læberne hos syge børn og deres familier. Med deres fortryllende tricks, varme hjerter og evnen til at skabe en særlig forbindelse bringer de et kærkomment lys i en ofte svær tid. Tryllehatten skaber magiske øjeblikke fyldt med grin, forundring og håb – små pauser fra hverdagens udfordringer, hvor glæden får lov at fylde rummet.</p>
+          <p>Tryllehatten er vores samling af spasmagere, tryllekunstnere og filihankatte, som hver dag tager ud og spreder magien på landets hospitaler. De er alle fabelagtige magikere, som har spidskompetence i at trylle et smil frem på læberne hos syge børn og deres familier. Med deres fortryllende tricks, varme hjerter og evnen til at skabe en særlig forbindelse bringer de et kærkomment lys i en ofte svær tid. Tryllehatten skaber magiske øjeblikke fyldt med grin, forundring og håb – små pauser fra hverdagens udfordringer, hvor glæden får lov at fylde rummet. Det betyder også at alle donationer går ud til magikerne, så vi kan få dem ud så ofte som muligt.</p>
         </div>
       </section>
       <section class="standard_scroll_section">
@@ -104,7 +67,53 @@ const cards = [
       <section class="standard_scroll_section">
         <h2>MØD TRYLLEKUNSTNERNE</h2>
         <div class="card-container">
-          {cards.map((card) => <Card imgSrc={card.imgSrc} title={card.title} description={card.description} />)}
+          <div class="card">
+            <img class="card-image" src="/img/tryllemichael.webp" alt="" />
+            <h5 class="card-title">TRYLLE MICHAEL</h5>
+            <p class="card-description">Michael tryller på Riget. Han er en ægte fortryllende magiker, der både får børn og voksne til at forbløffes.</p>
+          </div>
+          <div class="card">
+            <img class="card-image" src="/img/LasseNK.webp" alt="" />
+            <h5 class="card-title">LASSE NK</h5>
+            <p class="card-description">Lasse spreder tryllestøv på Herlev, Hvidovre og Gram Slot. Han er mester til ballonkunst og har en populær segway.</p>
+          </div>
+        </div>
+      </section>
+      <section class="standard_scroll_section">
+        <div class="card-container">
+          <div class="card">
+            <img class="card-image" src="/img/hennysolskin.webp" alt="" />
+            <h5 class="card-title">HENNY SOLSKIN</h5>
+            <p class="card-description">Henny Solskin er en ægte solstråle. Med hendes mange farver, dyr og bamser spreder hun glæde og smil på Herning hospital.</p>
+          </div>
+          <div class="card">
+            <img class="card-image" src="/img/birger.webp" alt="" />
+            <h5 class="card-title">BIRGER</h5>
+            <p class="card-description">Birger tryller for KidsAid i Viborg og Odense. Han har optrådt for både store og små i over 20 år, og er derfor en meget erfaren magiker!</p>
+          </div>
+        </div>
+      </section>
+      <section class="standard_scroll_section">
+        <div class="card-container">
+          <div class="card">
+            <img class="card-image" src="/img/helle.webp" alt="" />
+            <h5 class="card-title">HELLE</h5>
+            <p class="card-description">Helle er en vaskeægte Danmarksmester i børnetryl.</p>
+          </div>
+          <div class="card">
+            <img class="card-image" src="/img/rasmusfupogfidus.webp" alt="" />
+            <h5 class="card-title">RASMUS FUP & FIDUS</h5>
+            <p class="card-description">Rasmus Fup & Fidus fra AUH tryller på forskellige børneafdelinger på Aarhus og Familiehuset.</p>
+          </div>
+        </div>
+      </section>
+      <section class="standard_scroll_section">
+        <div class="card-container">
+          <div class="card">
+            <img class="card-image" src="/img/fabelagtigefalbe.webp" alt="" />
+            <h5 class="card-title">FABELAGTIGE FALBE</h5>
+            <p class="card-description">En altmulig-troldmand, som kan få hvert barn til at grine.</p>
+          </div>
         </div>
       </section>
       <section class="standard_scroll_section">
