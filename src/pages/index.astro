@@ -47,7 +47,7 @@ import Card from "../components/Card.astro";
           <img src="/img/ballongroen.svg" alt="" />
           <div>
             <p>OVER</p>
-            <h3>90.000</h3>
+            <h3 class="counter" data-target="90000">0</h3>
             <p>BØRN HAR FÅET TRYLLEHATTEN PÅ</p>
             <div class="tallet">
               <Button>FÅ TALLET TIL AT STIGE</Button>
@@ -121,7 +121,7 @@ import Card from "../components/Card.astro";
           <img class="left" src="/img/Kort.svg" alt="" />
           <div class="middle">
             <p>BLIV EN DEL AF DE</p>
-            <h3>3245</h3>
+            <h3 class="counter" data-target="3243">0</h3>
             <p>VIRKSOMHEDER, PERSONER OG FAMILIER, SOM ALLEREDE STØTTER TRYLLEHATTENS MAGI</p>
             <div class="stot">
               <Button>STØT</Button>
@@ -176,4 +176,46 @@ import Card from "../components/Card.astro";
       offset: ["start end", "end end", "start start", "end start"],
     });
   });
+  // TEST TEST TEST
+
+  function animateCounter(element, start, end, duration) {
+    const range = end - start;
+    const increment = range / (duration / 16); // Approx 60fps
+    let current = start;
+
+    function updateCounter() {
+      current += increment;
+      if (current >= end) {
+        current = end;
+      }
+      element.textContent = Math.floor(current).toLocaleString(); // Format with commas
+      if (current < end) {
+        requestAnimationFrame(updateCounter);
+      }
+    }
+
+    updateCounter();
+  }
+
+  const counters = document.querySelectorAll(".counter");
+  const animatedFlags = new WeakMap(); // Keep track of animated elements
+
+  // Set up Intersection Observer
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const element = entry.target;
+        if (entry.isIntersecting && !animatedFlags.get(element)) {
+          const target = parseInt(element.getAttribute("data-target"), 10);
+          animatedFlags.set(element, true); // Mark as animated
+          animateCounter(element, 0, target, 2000); // Animate from 0 to target in 2 seconds
+        }
+      });
+    },
+    {
+      threshold: 0.5, // Trigger when 50% of the element is visible
+    }
+  );
+
+  counters.forEach((counter) => observer.observe(counter));
 </script>
