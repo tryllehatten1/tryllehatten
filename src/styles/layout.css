@@ -89,3 +89,10 @@ nav img {
 nav a {
   margin: 3rem 0rem;
 }
+
+/* Ensure the button's container is sticky */
+.sticky-button {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+}
