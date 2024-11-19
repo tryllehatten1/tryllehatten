@@ -92,9 +92,21 @@ nav a {
 }
 
 .stot {
-margin-left: 31%;
+display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Justerer højden til hele vinduets højde */
 }
 
 .tallet {
-  margin-left: 10%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Justerer højden til hele vinduets højde */
+}
+.tallet1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Justerer højden til hele vinduets højde */
 }
