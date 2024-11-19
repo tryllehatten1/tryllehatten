@@ -26,9 +26,11 @@ import Card from "../components/Card.astro";
       <header>
         <nav>
           <img src="/img/Logo.svg" alt="" />
-          <Button> DONER </Button>
+          <div class="sticky-button">
+        <Button> DONER </Button>
           <Video />
-        </nav>
+          </div>
+      </nav>
       </header>
       <main>
         <section class="standard_scroll_section">
@@ -151,7 +153,15 @@ import Card from "../components/Card.astro";
         <section class="standard_scroll_section">
           <div id="hat"></div>
         </section>
-        <footer></footer>
+        <div class="sticky-image-container">
+        <img class="sticky-image" src="/img/Hatfooter1.svg" alt="Hat Footer Image" />
+        <img class="sticky-image2" src="/img/Hatfooter2.svg" alt="Hat Footer Image" />
+      </div>
+      
+     
+      <footer>
+      
+      </footer>
       </main>
     </div>
   </body>
