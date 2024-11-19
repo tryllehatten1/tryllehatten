@@ -221,5 +221,24 @@ display: flex;
 }
 
 .tallet {
-  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Justerer højden til hele vinduets højde */
+}
+
+.tallet1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Justerer højden til hele vinduets højde */
+}
+
+.hund {
+  scale: 2;
+}
+
+.elefant {
+  scale: 1.8;
+  transform: scaleX(-1);
 }
