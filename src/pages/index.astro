@@ -24,7 +24,14 @@ import Iframe from "../components/Iframe.astro";
       </div>
       <header>
         <nav>
-          <img src="/img/Logo.svg" alt="" />
+          <img class="backgroundred" src="/public/header/Vector.svg" alt="Background image red" />
+          <img class="backgroundblue" src="/public/header/Vectorblue.svg" alt="Background image blue" />
+          <img class="elefant1" src="/public/header/ballongroen.svg" alt="Ballon dyr" />
+          <img class="spillekort" src="/public/header/Spillekort.svg" alt="" />
+          <img class="hat" src="/img/Logo.svg" alt="Hat" />
+          <img class="kanin" src="/public/header/Kanin.svg" alt="Kanin" />
+          <img class="kort" src="/public/header/Kort.svg" alt="Kort" />
+
           <Button> DONER </Button>
         </nav>
       </header>
@@ -34,7 +41,7 @@ import Iframe from "../components/Iframe.astro";
           <h4>Magien der skaber et smil</h4>
         </section>
         <section class="standard_scroll_section">
-          <img src="/img/silke.svg" alt="" />
+          <img src="/img/Silke.svg" alt="" />
         </section>
         <section class="standard_scroll_section">
           <div class="blue">
@@ -43,7 +50,7 @@ import Iframe from "../components/Iframe.astro";
         </section>
         <section class="standard_scroll_section">
           <div class="info1">
-            <img src="/img/ballongroen.svg" alt="" />
+            <img class="elefant" src="/img/ballongroen.svg" alt="" />
             <div>
               <p>OVER</p>
               <h3 class="counter" data-target="90000">0</h3>
@@ -60,7 +67,7 @@ import Iframe from "../components/Iframe.astro";
               <h3>100%</h3>
               <p>AF DONATIONER GÅR TIL AT SKABE MAGISKE ØJEBLIKKE FOR BØRNENE</p>
             </div>
-            <img src="/img/Ballonpink.svg" alt="" />
+            <img class="hund" src="/img/Ballonpink.svg" alt="" />
           </div>
         </section>
         <section class="standard_scroll_section">
@@ -180,7 +187,7 @@ import Iframe from "../components/Iframe.astro";
       offset: ["start end", "end end", "start start", "end start"],
     });
   });
-  // TEST TEST TEST
+  // Counter til tal - Tak til gemini for koden//
 
   function animateCounter(element, start, end, duration) {
     const range = end - start;
@@ -212,7 +219,7 @@ import Iframe from "../components/Iframe.astro";
         if (entry.isIntersecting && !animatedFlags.get(element)) {
           const target = parseInt(element.getAttribute("data-target"), 10);
           animatedFlags.set(element, true); // Mark as animated
-          animateCounter(element, 0, target, 2000); // Animate from 0 to target in 2 seconds
+          animateCounter(element, 0, target, 5000); // Animate from 0 to target in 2 seconds
         }
       });
     },

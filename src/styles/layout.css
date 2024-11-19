@@ -82,7 +82,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 50%; /* DET ER TIL VIDEOEN I DESKTOP VERSION / SKAL ÆNDRES VED MOBIL VERSION*/
+  padding-bottom: 10%;
 }
 nav img {
   margin: 3rem;
@@ -109,4 +109,13 @@ display: flex;
   justify-content: center;
   align-items: center;
   /* Justerer højden til hele vinduets højde */
+}
+
+.hund {
+  scale: 2;
+}
+
+.elefant {
+  scale: 1.8;
+  transform: scaleX(-1); 
 }

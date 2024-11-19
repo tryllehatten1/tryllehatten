@@ -130,3 +130,58 @@ img {
   font-weight: 400;
   text-align: left;
 }
+
+/* NAV NAV NAV */
+
+.backgroundblue {
+position: absolute;
+z-index: -1;
+scale: 10;
+margin-left: 80%;
+}
+.backgroundred {
+  position: absolute;
+  z-index: -1;
+  scale: 10;
+}
+
+.elefant1 {
+  scale: 3;
+  transform: scaleX(-1);
+  margin-top: 20%;
+  margin-left: 10%;
+}
+
+.spillekort {
+  scale: 2;
+  padding-bottom: 5%;
+}
+
+.hat {
+  scale: 3;
+  margin-top: 20%;
+  margin-right: 12%;
+}
+
+.kanin {
+  scale: 2.5;
+}
+
+.kort {
+  scale: 1.2;
+  position: absolute;
+  margin-left: 90%;
+  margin-top: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
