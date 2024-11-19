@@ -124,8 +124,8 @@ nav a {
   position: fixed;
   z-index: 1000;
   bottom: 0px;
-  width: 1800px;
-  top: 150%;
+  width: 80%;
+  top: 140%;
 }
 
 /* Hatfooter2: Background image */
@@ -135,8 +135,8 @@ nav a {
   bottom: 0;
   width: 1600px;
   opacity: 100;
-  width: 1800px;
-    top: 150%;
+  width: 80%;
+    top: 140%;
 }
 main {
   position: relative;
