@@ -112,6 +112,11 @@ nav a {
 /* For the sticky image container */
 .sticky-image-container {
   position: relative;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+    align-items: center;
+
 }
 
 /* Hatfooter1: Frontmost image */
@@ -119,9 +124,8 @@ nav a {
   position: fixed;
   z-index: 1000;
   bottom: 0px;
-  top: 1500px;
-  left: 0.5%;
-  width: 1460px;
+  width: 1800px;
+  top: 138%;
 }
 
 /* Hatfooter2: Background image */
@@ -129,10 +133,10 @@ nav a {
   position: fixed;
   z-index: -1;
   bottom: 0;
-  top: 1500px;
-  left: 0.5%;
-  width: 1460px;
+  width: 1600px;
   opacity: 100;
+  width: 1800px;
+    top: 138%;
 }
 main {
   position: relative;
@@ -170,31 +174,6 @@ p {
   z-index: 1;
 }
 
-/* For the sticky image container */
-.sticky-image-container {
-  position: relative;
-}
-
-/* Hatfooter1: Frontmost image */
-.sticky-image {
-  position: fixed;
-  z-index: 1000;
-  bottom: 0px;
-  top: 1500px;
-  left: 0.5%;
-  width: 1460px;
-}
-
-/* Hatfooter2: Background image */
-.sticky-image2 {
-  position: fixed;
-  z-index: -1;
-  bottom: 0;
-  top: 1500px;
-  left: 0.5%;
-  width: 1460px;
-  opacity: 100;
-}
 main {
   position: relative;
   z-index: 10;
@@ -219,6 +198,7 @@ display: flex;
   align-items: center;
   /* Justerer højden til hele vinduets højde */
 }
+
 
 .tallet {
   display: flex;
