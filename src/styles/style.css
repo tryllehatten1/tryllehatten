@@ -133,7 +133,7 @@ img {
   text-align: left;
 }
 
-/* Baggrundsbillede */
+/* Baggrundsbillede
 .gulfigur {
   
   background-image: url('/img/gulfigur.webp');
@@ -168,4 +168,4 @@ img {
   position: sticky;
     background-size: contain;
   
-}
+} */
