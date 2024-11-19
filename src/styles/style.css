@@ -1,14 +1,13 @@
 #myElement {
   position: absolute;
-  cursor: url('/img/Tryllestav.svg'), auto;
+  cursor: url("/img/Tryllestav.svg"), auto;
   width: 100px;
-    height: 100px;
+  height: 100px;
 }
 
 #myElement:active {
-  cursor: url('/img/Tryllestavvedklik.svg'), auto;
+  cursor: url("/img/Tryllestavvedklik.svg"), auto;
 }
-  
 
 .scroll_container {
   position: fixed;
@@ -93,7 +92,7 @@ main {
   margin: auto;
 }
 body {
-  background-color: #FFFAFA;
+  background-color: #fffafa;
 }
 
 img {
@@ -111,7 +110,7 @@ img {
   border-radius: 8px;
   padding: 16px;
   position: relative;
-    z-index: 1;
+  z-index: 1;
 
   width: 60%;
   justify-self: center;
@@ -125,7 +124,7 @@ img {
 
 .card-title {
   font-size: 1.25rem;
-    text-align: left;
+  text-align: left;
 }
 
 .card-description {
@@ -133,51 +132,13 @@ img {
   text-align: left;
 }
 
-<<<<<<< HEAD
-/* Baggrundsbillede
-.gulfigur {
-  
-  background-image: url('/img/gulfigur.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
-  position: sticky;
-    background-size: contain;
- 
-}
-
-.roedfigur {
-
-  background-image: url('/img/roedfigur.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
-  position: sticky;
-    background-size: contain;
- 
-}
-
-.blaafigur {
-
-  background-image: url('/img/blaafigur.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
-  position: sticky;
-    background-size: contain;
-  
-} */
-=======
 /* NAV NAV NAV */
 
 .backgroundblue {
-position: absolute;
-z-index: -1;
-scale: 10;
-margin-left: 80%;
+  position: absolute;
+  z-index: -1;
+  scale: 10;
+  margin-left: 80%;
 }
 .backgroundred {
   position: absolute;
@@ -213,16 +174,3 @@ margin-left: 80%;
   margin-left: 90%;
   margin-top: 20%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> 9af2cf2580f2b716b48fbffe6e3a9d5c59e4fd07
