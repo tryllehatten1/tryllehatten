@@ -82,7 +82,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 50%; /* DET ER TIL VIDEOEN I DESKTOP VERSION / SKAL ÆNDRES VED MOBIL VERSION*/
+  padding-bottom: 10%;
 }
 nav img {
   margin: 3rem;
@@ -214,7 +214,10 @@ p {
 }
 
 .stot {
-  margin-left: 31%;
+display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Justerer højden til hele vinduets højde */
 }
 
 .tallet {

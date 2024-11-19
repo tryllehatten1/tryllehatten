@@ -1,10 +1,9 @@
 ---
-import Video from "../components/Video.astro";
-import Youtube from "../components/Youtube.astro";
 import "../styles/style.css";
 import "../styles/layout.css";
 import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
+import Iframe from "../components/Iframe.astro";
 ---
 
 <html lang="en">
@@ -25,12 +24,16 @@ import Card from "../components/Card.astro";
       </div>
       <header>
         <nav>
-          <img src="/img/Logo.svg" alt="" />
-          <div class="sticky-button">
-        <Button> DONER </Button>
-          <Video />
-          </div>
-      </nav>
+          <img class="backgroundred" src="/public/header/Vector.svg" alt="Background image red" />
+          <img class="backgroundblue" src="/public/header/Vectorblue.svg" alt="Background image blue" />
+          <img class="elefant1" src="/public/header/ballongroen.svg" alt="Ballon dyr" />
+          <img class="spillekort" src="/public/header/Spillekort.svg" alt="" />
+          <img class="hat" src="/img/Logo.svg" alt="Hat" />
+          <img class="kanin" src="/public/header/Kanin.svg" alt="Kanin" />
+          <img class="kort" src="/public/header/Kort.svg" alt="Kort" />
+
+          <Button> DONER </Button>
+        </nav>
       </header>
       <main>
         <section class="standard_scroll_section">
@@ -38,7 +41,7 @@ import Card from "../components/Card.astro";
           <h4>Magien der skaber et smil</h4>
         </section>
         <section class="standard_scroll_section">
-          <img src="/img/silke.svg" alt="" />
+          <img src="/img/Silke.svg" alt="" />
         </section>
         <section class="standard_scroll_section">
           <div class="blue">
@@ -47,13 +50,13 @@ import Card from "../components/Card.astro";
         </section>
         <section class="standard_scroll_section">
           <div class="info1">
-            <img src="/img/ballongroen.svg" alt="" />
+            <img class="elefant" src="/img/ballongroen.svg" alt="" />
             <div>
               <p>OVER</p>
               <h3 class="counter" data-target="90000">0</h3>
               <p>BØRN HAR FÅET TRYLLEHATTEN PÅ</p>
-              <div class="tallet">
-                <Button>FÅ TALLET TIL AT STIGE</Button>
+              <div class="tallet1">
+                <Button>Doner</Button>
               </div>
             </div>
           </div>
@@ -64,7 +67,7 @@ import Card from "../components/Card.astro";
               <h3>100%</h3>
               <p>AF DONATIONER GÅR TIL AT SKABE MAGISKE ØJEBLIKKE FOR BØRNENE</p>
             </div>
-            <img src="/img/Ballonpink.svg" alt="" />
+            <img class="hund" src="/img/Ballonpink.svg" alt="" />
           </div>
         </section>
         <section class="standard_scroll_section">
@@ -134,6 +137,10 @@ import Card from "../components/Card.astro";
           </div>
         </section>
         <section class="standard_scroll_section">
+          <h2>Alle har ret til den magi</h2>
+          <Iframe />
+        </section>
+        <section class="standard_scroll_section">
           <div class="gul">
             <p>Tryllehatten stræber efter ikke bare at være en samling af talentfulde kunstnere, men et koncept som også har plads til de skønne børn, som det hele handler om. De kan nemlig også få lov til at “få hatten på”, da mange af vores kunstnere deler ud af deres tricks, så børnene kan dele dem med deres familie og venner, når de kommer på besøg. På denne måde går vi efter at magien forbliver med børnene, selv når dagen er omme og tryllekunstnerne må drage hjemad.</p>
           </div>
@@ -154,14 +161,11 @@ import Card from "../components/Card.astro";
           <div id="hat"></div>
         </section>
         <div class="sticky-image-container">
-        <img class="sticky-image" src="/img/Hatfooter1.svg" alt="Hat Footer Image" />
-        <img class="sticky-image2" src="/img/Hatfooter2.svg" alt="Hat Footer Image" />
-      </div>
-      
-     
-      <footer>
-      
-      </footer>
+          <img class="sticky-image" src="/img/Hatfooter1.svg" alt="Hat Footer Image" />
+          <img class="sticky-image2" src="/img/Hatfooter2.svg" alt="Hat Footer Image" />
+        </div>
+
+        <footer></footer>
       </main>
     </div>
   </body>
@@ -188,7 +192,7 @@ import Card from "../components/Card.astro";
       offset: ["start end", "end end", "start start", "end start"],
     });
   });
-  // TEST TEST TEST
+  // Counter til tal - Tak til gemini for koden//
 
   function animateCounter(element, start, end, duration) {
     const range = end - start;
@@ -220,7 +224,7 @@ import Card from "../components/Card.astro";
         if (entry.isIntersecting && !animatedFlags.get(element)) {
           const target = parseInt(element.getAttribute("data-target"), 10);
           animatedFlags.set(element, true); // Mark as animated
-          animateCounter(element, 0, target, 2000); // Animate from 0 to target in 2 seconds
+          animateCounter(element, 0, target, 5000); // Animate from 0 to target in 2 seconds
         }
       });
     },
