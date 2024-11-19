@@ -95,21 +95,58 @@ nav a {
   top: 0%;
   right: 0%;
 }
-/** image HAT **/
-.sticky-image-container {
-  position: fixed;
-  bottom: -220%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-  transition: all 0.3s ease-in-out;
+
+.info1 img,
+.info2 img,
+.info3 img,
+.left,
+.right,
+.middle,
+.img,
+.card {
+  position: relative;
+  z-index: 1;
 }
 
-.sticky-image {
-  width: 1400px;
-  height: auto;
+/* For the sticky image container */
+.sticky-image-container {
+  position: relative;
 }
+
+/* Hatfooter1: Frontmost image */
+.sticky-image {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0px;
+  top: 1500px;
+  left: 0.5%;
+  width: 1460px;
+}
+
+/* Hatfooter2: Background image */
 .sticky-image2 {
-  width: 1400px;
-  height: auto;
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  top: 1500px;
+  left: 0.5%;
+  width: 1460px;
+  opacity: 100;
+}
+main {
+  position: relative;
+  z-index: 10;
+}
+
+.card-container {
+  position: relative;
+  z-index: 10;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  position: relative;
 }
