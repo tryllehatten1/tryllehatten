@@ -82,7 +82,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 50%; /* DET ER TIL VIDEOEN I DESKTOP VERSION / SKAL ÆNDRES VED MOBIL VERSION*/
+  padding-bottom: 10%;
 }
 nav img {
   margin: 3rem;
@@ -91,10 +91,154 @@ nav a {
   margin: 3rem 0rem;
 }
 
+.sticky-button {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+}
+
+.info1 img,
+.info2 img,
+.info3 img,
+.left,
+.right,
+.middle,
+.img,
+.card {
+  position: relative;
+  z-index: 1;
+}
+
+/* For the sticky image container */
+.sticky-image-container {
+  position: relative;
+}
+
+/* Hatfooter1: Frontmost image */
+.sticky-image {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0px;
+  top: 1500px;
+  left: 0.5%;
+  width: 1460px;
+}
+
+/* Hatfooter2: Background image */
+.sticky-image2 {
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  top: 1500px;
+  left: 0.5%;
+  width: 1460px;
+  opacity: 100;
+}
+main {
+  position: relative;
+  z-index: 10;
+}
+
+.card-container {
+  position: relative;
+  z-index: 10;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  position: relative;
+}
+
+.sticky-button {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+}
+
+.info1 img,
+.info2 img,
+.info3 img,
+.left,
+.right,
+.middle,
+.img,
+.card {
+  position: relative;
+  z-index: 1;
+}
+
+/* For the sticky image container */
+.sticky-image-container {
+  position: relative;
+}
+
+/* Hatfooter1: Frontmost image */
+.sticky-image {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0px;
+  top: 1500px;
+  left: 0.5%;
+  width: 1460px;
+}
+
+/* Hatfooter2: Background image */
+.sticky-image2 {
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  top: 1500px;
+  left: 0.5%;
+  width: 1460px;
+  opacity: 100;
+}
+main {
+  position: relative;
+  z-index: 10;
+}
+
+.card-container {
+  position: relative;
+  z-index: 10;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  position: relative;
+}
+
 .stot {
-margin-left: 31%;
+display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Justerer højden til hele vinduets højde */
 }
 
 .tallet {
-  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Justerer højden til hele vinduets højde */
+}
+
+.tallet1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Justerer højden til hele vinduets højde */
+}
+
+.hund {
+  scale: 2;
+}
+
+.elefant {
+  scale: 1.8;
+  transform: scaleX(-1);
 }
