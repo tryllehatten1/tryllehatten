@@ -174,23 +174,13 @@ p {
   z-index: 1;
 }
 
-main {
-  position: relative;
-  z-index: 10;
-}
+
 
 .card-container {
   position: relative;
   z-index: 10;
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
-  position: relative;
-}
 
 .stot {
 display: flex;

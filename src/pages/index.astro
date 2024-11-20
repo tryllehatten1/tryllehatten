@@ -10,7 +10,8 @@ import Iframe from "../components/Iframe.astro";
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
+    <!-- <meta name="viewport" content="width=device-width" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -193,6 +194,7 @@ import Iframe from "../components/Iframe.astro";
       offset: ["start end", "end end", "start start", "end start"],
     });
   });
+
   // Counter til tal - Tak til gemini for koden//
 
   function animateCounter(element, start, end, duration) {
@@ -225,7 +227,7 @@ import Iframe from "../components/Iframe.astro";
         if (entry.isIntersecting && !animatedFlags.get(element)) {
           const target = parseInt(element.getAttribute("data-target"), 10);
           animatedFlags.set(element, true); // Mark as animated
-          animateCounter(element, 0, target, 5000); // Animate from 0 to target in 2 seconds
+          animateCounter(element, 0, target, 1000); // Animate from 0 to target in 2 seconds
         }
       });
     },

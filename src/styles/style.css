@@ -86,10 +86,11 @@ p {
 a {
   font-family: "Work Sans";
 }
-
-main {
-  max-width: 60%;
-  margin: auto;
+@media (min-width: 500px) {
+  main {
+      max-width: 60%;
+      margin: auto;
+    }
 }
 body {
   background-color: #fffafa;
@@ -173,4 +174,30 @@ img {
   position: absolute;
   margin-left: 90%;
   margin-top: 20%;
+}
+
+/* MOBIL GANG GANG */
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 64px;
+  }
+
+ h2 {
+  font-size: 50px;
+  }
+/* p {
+
+}
+h4 {
+  
+}*/
+/* main {
+  margin: auto;
+  display: block;
+} */
+
+
+
+
 }
